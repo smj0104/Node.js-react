@@ -19,10 +19,11 @@ function Main() { //jsx는 class가 아닌 classname
             password: passwordRef.current.value,
             name: nameRef.current.value,
             email: emailRef.current.value
-        }
+        };
 
         setUserList([...userList, user]);
-    }
+        console.log(userList)
+    };
 
 
     return(
@@ -32,16 +33,16 @@ function Main() { //jsx는 class가 아닌 classname
         </header>   
         <main css = {S.mainContainerStyle}>
             <div css={S.userInputContainerStyle}>
-                <input type={"text"} placeholder={"username"} inputRef={usernameRef} />
-                <input type={"password"}  placeholder={"password"} inputRef={passwordRef}/>
-                <input type={"text"}  placeholder={"name"} inputRef={nameRef}/>
-                <input type={"email"}  placeholder={"email"} inputRef={emailRef}/>
+                <Input type={"text"} placeholder={"username"} inputRef={usernameRef} />
+                <Input type={"password"}  placeholder={"password"} inputRef={passwordRef}/>
+                <Input type={"text"}  placeholder={"name"} inputRef={nameRef}/>
+                <Input type={"text"}  placeholder={"email"} inputRef={emailRef}/>
                 <button type={"button"} onClick={handlerClick} >추가</button>
             </div>
             <table>
                 <thead>
                     <tr>
-                        <Th>번호</Th>
+                        <Th>number</Th>
                         <Th>username</Th>
                         <Th>password</Th>
                         <Th>name</Th>
