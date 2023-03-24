@@ -1,14 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
-import * as S from './style'
+import * as S from "./style";
 
 
-function Td({ children }){
+function Td({ children }) {
     return (
-        <Td css={S.style}>
-            { children }        
-        </Td>  
+        <td css={S.style}>{ children }</td>
     );
-} 
+}
 
 export default Td;
