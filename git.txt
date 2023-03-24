@@ -1,0 +1,11 @@
+git init 해당 프로젝트 폴더를 git폴더로 만들겠다
+
+git add README.md 스테이지에 추가함(.찍으면all)
+
+git commit -m "메세지 내용"
+
+git branch -M main 브랜치를 메인으로 이동
+
+git remote add origin https://github.com/smj0104/AWS_ReactStudy_20230324.git origin이라는 원격을 추가함
+
+git push -u origin main //origin main에 푸쉬함 
