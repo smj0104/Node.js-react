@@ -3,6 +3,7 @@ import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
 import {Route, Routes } from "react-router-dom";
 import MainAside from "./components/Aside/MainAside/MainAside";
 import InputSample from "./pages/InputSample/InputSample";
+import NumberCounter from "./pages/NumberCounter/NumberCounter";
 import Todo from "./pages/Todo/Todo";
 import UserList from "./pages/UserList/UserList";
 import { reset } from "./styles/Global/reset";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/sample/input/1" Component={InputSample}/>
         <Route path="/users" Component={UserList}/>
         <Route path="/todo" Component={Todo}/>
+        <Route path="/number/counter" Component={NumberCounter} />
       </Routes>
     </>
   );

@@ -14,7 +14,8 @@ const TodoContainer = css`
     width: 100%;
 `;
 
-const Todo = () => {
+const Todo = () => {  //리덕스를 쓰는 이유 
+
     const [isOpen, setIsOpen] = useState(false);  //기본값false
 
     const [modifyTodo, setModifyTodo] = useState({

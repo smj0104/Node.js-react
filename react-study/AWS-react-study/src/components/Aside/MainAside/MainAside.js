@@ -67,6 +67,11 @@ const MainAside = () => {
                         }
                     ]
                 },
+                {
+                    title: 'NumberCounter',
+                    itemId: '/number/counter',
+                    elemBefore: () => <BsCardChecklist />,
+                }
             ]}
             />
         </aside>
